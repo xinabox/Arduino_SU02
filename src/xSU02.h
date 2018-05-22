@@ -1,6 +1,6 @@
 /*
 	This is a library for the SU02 
-	Universal Digital IN
+	Digital Input
 	
 	Max input 3.3V
 
