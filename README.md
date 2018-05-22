@@ -1,6 +1,6 @@
 # ☒CHIP SU02
 <img src="extras/SU02 V1.0.0.JPG" width="35%" height="auto" align="right">
-Universal Digital Input.
+Digital Input.
 
 This module can be purchased on [Xinabox CC](https://xinabox.cc/products/SU02/).
 
