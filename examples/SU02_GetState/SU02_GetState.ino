@@ -1,6 +1,6 @@
 /*************************************************************
   This is an example for the SU02
-  Universal Digital Input
+  Digital Input
 
   You can buy one on our store!
   -----> https://xinabox.cc/products/SU02/
