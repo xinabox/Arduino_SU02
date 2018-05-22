@@ -6,15 +6,13 @@
 # Instance				(KEYWORD1)
 #######################################
 
-SU01					 KEYWORD1
-
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
 begin   				 KEYWORD2
-getVoltage   			 KEYWORD2
-poll					 KEYWORD2
+poll					   KEYWORD2
+getState   			 KEYWORD2
 
 #######################################
 # Constants 			(LITERAL1)
