@@ -25,6 +25,9 @@ void setup() {
   Wire.pins(2, 14);
   Wire.setClockStretchLimit(15000);
 #endif
+  
+  // Start I2C Bus
+  Wire.begin();
 
   // Start the  SU02 Sensor
   SU02.begin();
