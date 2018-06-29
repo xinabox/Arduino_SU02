@@ -49,7 +49,7 @@
 #endif
 
 #ifndef LOW_STATE
-	#define LOW_STATE 2048	1.0
+	#define LOW_STATE 	1.0
 #endif
 
 
