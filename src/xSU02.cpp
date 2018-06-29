@@ -34,7 +34,7 @@ xSU02::xSU02(uint8_t _addr){
 }
 
 /*!
-	@brief 	Initilize ADC081C021
+	@brief 	Configure the sensor
 */
 void xSU02::begin(void){
 	xCore.write8(SU02_I2C_ADDR, ADC_REG_CONF, ADC_CONF_CYC_TIME_256); 
@@ -48,12 +48,21 @@ void xSU02::poll(void){
 }
 
 /*!
-	@brief 	Initilize ADC081C021
+	@brief 	Get the State of the Button
 
 	@ret	boolean state
 */
 bool xSU02::getState(void){
 	return state;
+}
+
+/*!
+	@brief 	Get the value of the raw voltage
+
+	@ret	float voltage
+*/
+float xSU02::getVoltage(void){
+	return voltage;
 }
 
 /*-----------------Private Class Function----------------*/
@@ -64,7 +73,6 @@ bool xSU02::getState(void){
 void xSU02::readVoltage(void){
 	uint8_t a,b;
 	uint16_t data;
-	float voltage;
 	
 	data = xCore.read16(SU02_I2C_ADDR, ADC_REG_RESULT);
 	
