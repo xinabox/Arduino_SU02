@@ -41,11 +41,17 @@
 #define ADC_CONF_CYC_TIME_512	0xA0
 #define ADC_CONF_CYC_TIME_1024	0xC0
 #define ADC_CONF_CYC_TIME_2048	0xE0
-#define ADC_CONF_ALERT_MAN		0x01
-#define ADC_CONF_FLAG_EN		0x08
+#define ADC_CONF_ALERT_MAN	0x01
+#define ADC_CONF_FLAG_EN	0x08
 
-#define HIGH_STATE				3.0
-#define LOW_STATE				1.0
+#ifndef HIGH_STATE
+	#define HIGH_STATE	3.0
+#endif
+
+#ifndef LOW_STATE
+	#define LOW_STATE 2048	1.0
+#endif
+
 
 class xSU02: public xCoreClass
 {
@@ -80,7 +86,15 @@ class xSU02: public xCoreClass
 		*	@ret, boolean state of input
 		*/
 		bool	getState(void);
-	
+		
+		
+		/*
+		* 	Get the raw voltage 
+		*
+		*	@ret, float value of raw voltage
+		*/
+		float	getVoltage(void);
+		
 	private:
 		/*
 		* 	Reads voltage from ADC
@@ -89,6 +103,7 @@ class xSU02: public xCoreClass
 
 
 		uint8_t SU02_I2C_ADDR;
+		float voltage;
 		bool	state;
 };
 
