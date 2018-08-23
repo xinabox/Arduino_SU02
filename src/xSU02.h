@@ -73,7 +73,7 @@ class xSU02: public xCoreClass
 		/*
 		* 	Initialize ADC081C021
 		*/
-		void 	begin(void);
+		bool 	begin(void);
 
 		/*
 		* 	Request for measurement to made on ADC081C021
