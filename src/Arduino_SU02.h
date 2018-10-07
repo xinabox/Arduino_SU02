@@ -13,8 +13,8 @@
 	ADC081C021 - http://www.ti.com/lit/ds/symlink/adc081c021.pdf
 */
 
-#ifndef xSU02_h
-#define xSU02_h
+#ifndef Arduino_SU02_h
+#define Arduino_SU02_h
 
 // System Include
 #include <inttypes.h>
@@ -41,8 +41,8 @@
 #define ADC_CONF_CYC_TIME_512	0xA0
 #define ADC_CONF_CYC_TIME_1024	0xC0
 #define ADC_CONF_CYC_TIME_2048	0xE0
-#define ADC_CONF_ALERT_MAN	0x01
-#define ADC_CONF_FLAG_EN	0x08
+#define ADC_CONF_ALERT_MAN		0x01
+#define ADC_CONF_FLAG_EN		0x08
 
 #ifndef HIGH_STATE
 	#define HIGH_STATE	3.0
