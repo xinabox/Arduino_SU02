@@ -13,8 +13,8 @@
 	ADC081C021 - http://www.ti.com/lit/ds/symlink/adc081c021.pdf
 */
 
-#ifndef arduino-SU02_h
-#define arduino-SU02_h
+#ifndef xSU02_h
+#define xSU02_h
 
 // System Include
 #include <inttypes.h>
@@ -45,11 +45,11 @@
 #define ADC_CONF_FLAG_EN		0x08
 
 #ifndef HIGH_STATE
-	#define HIGH_STATE	3.0
+	#define HIGH_STATE	1.0
 #endif
 
 #ifndef LOW_STATE
-	#define LOW_STATE 	1.0
+	#define LOW_STATE 	0.5
 #endif
 
 

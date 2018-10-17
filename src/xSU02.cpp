@@ -13,7 +13,7 @@
 	ADC081C021 - http://www.ti.com/lit/ds/symlink/adc081c021.pdf
 */
 
-#include <arduino-SU02.h>
+#include <xSU02.h>
 #include <math.h>
 
 /*-----------------Public Class Function----------------*/
