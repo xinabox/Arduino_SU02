@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/xinabox/arduino-SU02.svg?branch=master)](https://travis-ci.org/xinabox/arduino-SU02)
+[![GitHub issues](https://img.shields.io/github/issues/xinabox/arduino-SU02.svg)](https://github.com/xinabox/arduino-SU02/issues)
+
 # ☒CHIP SU02
 <img src="extras/SU02 V1.0.0.JPG" width="35%" height="auto" align="right">
 Digital Input.
