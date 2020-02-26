@@ -8,7 +8,7 @@ cache:
         - "~/.platformio"
         
 env:
-    - PLATFORMIO_CI_SRC=examples/examples/SU02_GetState
+    - PLATFORMIO_CI_SRC=examples/SU02_GetState/SU02_GetState
 
 install:
     - pip install -U platformio
